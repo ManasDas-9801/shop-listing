@@ -17,7 +17,7 @@ class ShopController extends Controller
                         ->where('cateogries.name','like','%'.$search_cat.'%')
                         ->select('shops.name as name' , 'shops.id as id','cateogries.name as cat_name' )
                         ->paginate(3);
-                         return view('view',$data);
+        return view('view',$data);
    }
    
    public function store(Request $req){

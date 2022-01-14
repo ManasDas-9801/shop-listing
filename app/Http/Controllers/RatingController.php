@@ -25,7 +25,7 @@ class RatingController extends Controller
 
          }
          else{
-            return redirect()->back()->with('err','You had already rated this Shop');
+            return redirect()->back()->with('err','You Had Already Rated This Shop');
          }
 
     }
